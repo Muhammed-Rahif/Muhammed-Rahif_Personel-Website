@@ -172,7 +172,6 @@ section{
     background: url("./Bg1.jpg");
     background-repeat:no-repeat;
     height: 100vh;
-    width:100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
