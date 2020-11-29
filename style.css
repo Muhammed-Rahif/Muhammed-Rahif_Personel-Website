@@ -175,7 +175,6 @@ section{
     color: #fff;
     min-height: 500px;
     background-size: cover;
-    background-position: right;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
