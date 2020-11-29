@@ -169,7 +169,7 @@ section{
 /* home section styling */
 .home{
     display: flex;
-    background: url("./Bg1.jpg") no-repeat center;
+    background: url("./Bg1.jpg");
     height: 100vh;
     color: #fff;
     min-height: 500px;
