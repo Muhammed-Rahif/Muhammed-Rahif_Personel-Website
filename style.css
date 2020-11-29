@@ -170,6 +170,7 @@ section{
 .home{
     display: flex;
     background: url("./Bg1.jpg");
+    background-repeat:no-repeat;
     height: 100vh;
     color: #fff;
     min-height: 500px;
