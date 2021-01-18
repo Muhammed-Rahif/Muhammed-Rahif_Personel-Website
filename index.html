@@ -8,11 +8,13 @@
     <link rel="icon" href="icon.jpg" type="image/icon type">
     <meta name="theme-color" content="#dc143c">
     <link rel="stylesheet" href="style.css">
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
 </head>
 
 <body>
@@ -21,6 +23,7 @@
         <link rel="stylesheet" href="loaderStyle.css">
         <script>
             $(window).on("load", function () {
+                
                 document.getElementById("loader-wrapper").style.display = "block";
                 document.getElementById("website").style.display = "none";
             });
@@ -30,7 +33,9 @@
 
             function showPage() {
                 $(".loader-wrapper").fadeOut("slow");
+                document.getElementById("loader-wrapper").remove();
                 document.getElementById("website").style.display = "block";
+                AOS.init();
             }
         </script>
         <div class='body'>
@@ -397,11 +402,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init();
-    </script>
+
 </body>
 
 </html>
