@@ -22,6 +22,7 @@
     <div class="loader-wrapper" id="loader-wrapper">
         <link rel="stylesheet" href="loaderStyle.css">
         <script>
+            <!-- Method 1 -->
             $(window).on("load", function () {
                 
                 document.getElementById("loader-wrapper").style.display = "block";
@@ -37,6 +38,14 @@
                 document.getElementById("website").style.display = "block";
                 AOS.init();
             }
+            
+            <!-- Method 2 -->
+//             $(window).on("load", async function () {
+//                 await $(".loader-wrapper").fadeOut("slow");
+//                 document.getElementById("loader-wrapper").remove();
+//                 document.getElementById("website").style.display = "block";
+//                 AOS.init();
+//             });
         </script>
         <div class='body'>
             <span>
