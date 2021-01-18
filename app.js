@@ -50,6 +50,13 @@ $(document).ready(function(){
           backSpeed: 60,
           loop: true
       });
+
+      var typed = new Typed(".h1", {
+        strings: [ "Loading!", " Loading.!", "Loading..!", " Loading...!", " Loading....!"],
+        typeSpeed: 50,
+        backSpeed: 60,
+        loop: true
+    });
   
       // owl carousel script
       $('.carousel').owlCarousel({
