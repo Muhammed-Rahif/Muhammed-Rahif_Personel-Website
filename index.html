@@ -17,35 +17,36 @@
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
     <!-- Loading page -->
     <div class="loader-wrapper" id="loader-wrapper">
         <link rel="stylesheet" href="loaderStyle.css">
         <script>
-//             Method 1
-            $(window).on("load", function () {
-                
-                document.getElementById("loader-wrapper").style.display = "block";
-                document.getElementById("website").style.display = "none";
-            });
-            var loader;
+            //             Method 1
+            // $(window).on("load", function () {
 
-            loader = setTimeout(showPage, 5000);
+            //     document.getElementById("loader-wrapper").style.display = "block";
+            //     document.getElementById("website").style.display = "none";
+            // });
+            // var loader;
 
-            function showPage() {
-                $(".loader-wrapper").fadeOut("slow");
+            // loader = setTimeout(showPage, 5000);
+
+            // function showPage() {
+            //     $(".loader-wrapper").fadeOut("slow");
+            //     document.getElementById("loader-wrapper").remove();
+            //     document.getElementById("website").style.display = "block";
+            //     AOS.init();
+            // }
+
+            // Method 2
+            $(window).on("load", async function () {
+                await $(".loader-wrapper").fadeOut("slow");
                 document.getElementById("loader-wrapper").remove();
                 document.getElementById("website").style.display = "block";
+                document.querySelector("body").style.overflow = "auto"
                 AOS.init();
-            }
-            
-//             Method 2
-//             $(window).on("load", async function () {
-//                 await $(".loader-wrapper").fadeOut("slow");
-//                 document.getElementById("loader-wrapper").remove();
-//                 document.getElementById("website").style.display = "block";
-//                 AOS.init();
-//             });
+            });
         </script>
         <div class='body'>
             <span>
@@ -148,18 +149,20 @@
                                 Web Design</div>
                             <p>
                                 I know to web design myself. And all my websites are completly responsive. I am using
-                                bootstrap to make my web responsive. And I using Anime.js, Three.js, AOS, etc to animate my website.
+                                bootstrap to make my web responsive. And I using Anime.js, Three.js, AOS, etc to animate
+                                my website.
                             </p>
                         </div>
                     </div>
                     <div data-aos="fade-down" class="card">
                         <div class="box">
-                            <i class="fa fa-image" aria-hidden="true"></i>
+                            <i class="fa fa-mobile-alt" aria-hidden="true"></i>
                             <div class="text">
-                                Photo Editing</div>
+                                Mobile Development</div>
                             <p>
-                                I learned myself how to use adobe photoshop. And I
-                                Understood basic and advanced editng on photoshop.
+                                I learned react and react-native. So now I can build responsive mobile applications for
+                                android and ios. And the difference is react native can build android and ios apps same
+                                time.
                             </p>
                         </div>
                     </div>
@@ -169,8 +172,9 @@
                             <div class="text">
                                 Web Development</div>
                             <p>
-                                Now I am learning about web development. So I learning advanced in back-end side with node.js
-                                express, mongodb, etc. And I am very intresting to know more about in server side coding.
+                                In the section of we develpoment, I am a MERN stack developer, what's MERN ? MERN stands
+                                for MongoDB, Express, React, Node, after the four key technologies that make up the
+                                stack. And always learning more...
                             </p>
                         </div>
                     </div>
@@ -203,7 +207,7 @@
                         <div class="bars">
                             <div class="info">
                                 <span>HTML</span>
-                                <span>90%</span>
+                                <span>93%</span>
                             </div>
                             <div class="line html">
                             </div>
@@ -211,7 +215,7 @@
                         <div class="bars">
                             <div class="info">
                                 <span>CSS</span>
-                                <span>72%</span>
+                                <span>91%</span>
                             </div>
                             <div class="line css">
                             </div>
@@ -219,23 +223,39 @@
                         <div class="bars">
                             <div class="info">
                                 <span>JavaScript</span>
-                                <span>80%</span>
+                                <span>95%</span>
                             </div>
                             <div class="line js">
                             </div>
                         </div>
                         <div class="bars">
                             <div class="info">
+                                <span>React</span>
+                                <span>79%</span>
+                            </div>
+                            <div class="line react">
+                            </div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>React-Native</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="line react-native">
+                            </div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
                                 <span>Node.js</span>
-                                <span>68%</span>
+                                <span>88%</span>
                             </div>
                             <div class="line node-js">
                             </div>
                         </div>
                         <div class="bars">
                             <div class="info">
-                                <span>Mongodb</span>
-                                <span>40%</span>
+                                <span>MongoDB</span>
+                                <span>70%</span>
                             </div>
                             <div class="line mongodb">
                             </div>
@@ -329,7 +349,7 @@
                                     <div class="head">
                                         Address</div>
                                     <div class="sub-title">
-                                        Manakada, Malappuaram ,Kerala</div>
+                                        Malappuaram, Kerala, India</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -338,7 +358,9 @@
                                     <div class="head">
                                         Email</div>
                                     <div class="sub-title">
-                                        <a class="sub-title" href="mailto:rahifpalliyalil@gmail.com">rahifpalliyalil@gmail.com</a></div>
+                                        <a class="sub-title"
+                                            href="mailto:rahifpalliyalil@gmail.com">rahifpalliyalil@gmail.com</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -371,12 +393,28 @@
                         </form>
                     </div>
                 </div>
+                <div style="width: 80vw;height: auto;margin-top: 3.5em;">
+                    <p style="text-align: center;">Or</p>
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <a href="https://www.fiverr.com/rahif_dev?up_rollout=%22">
+                            <img class="social-media-img" style="width: 4.5em;" src="./images/icons/fiverr.png" alt="">
+                        </a>
+                        <a href="https://github.com/Muhammed-Rahif">
+                            <img class="social-media-img" style="width: 4.5em;" src="./images/icons/github.png" alt="">
+                        </a>
+                        <a href="https://stackoverflow.com/users/14781260/muhammed-rahif">
+                            <img class="social-media-img" style="width: 3.8em;" src="./images/icons/stackoverflow.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- footer section start -->
         <footer>
-            <span>Created By <a href="mailto:rahifpalliyalil@gmail.com">Muhammed Rahif</a> | <span class="far fa-copyright"></span> 2020 All rights
+            <span>Created By <a href="mailto:rahifpalliyalil@gmail.com">Muhammed Rahif</a> | <span
+                    class="far fa-copyright"></span> 2020 All rights
                 reserved.</span>
         </footer>
     </div>
@@ -393,7 +431,6 @@
                 success: function (response) {
                     alert("Message Sended")
                     window.location.reload()
-                    //window.location.href="https://google.com"
                 },
                 error: function (err) {
                     alert("Something Error")

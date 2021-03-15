@@ -365,19 +365,25 @@ section{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 93%;
 }
 .skills-content .right .css::before{
-    width: 72%;
+    width: 91%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 95%;
 }
 .skills-content .right .node-js::before{
-    width: 68%;
+    width: 88%;
+}
+.skills-content .right .react::before{
+    width: 79%;
+}
+.skills-content .right .react-native::before{
+    width: 75%;
 }
 .skills-content .right .mongodb::before{
-    width: 40%;
+    width: 70%;
 }
 
 /* teams section styling */
@@ -684,4 +690,11 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+.social-media-img{
+    transition: .5s;
+    margin: .5em;
+}
+.social-media-img:hover{
+    box-shadow: 4px 4px 8px black;
 }
